@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_practices/pages/myListview.dart';
 import 'package:flutter_practices/pages/pageTextwidget.dart';
 import 'package:flutter_practices/pages/widgetLayouting.dart';
 
@@ -15,7 +16,14 @@ class MyHomepage extends StatelessWidget {
       icon: Icon(Icons.pages),
       practiceName: "Layouting Widget",
       navigation: WidgetLayouting.nameRoute,
-      desc: "Pratice Widge Layouting / invisible widget",
+      desc: "Pratice Widget Layouting / invisible widget",
+    ),
+    PageItem(
+      icon: Icon(Icons.list),
+      practiceName: "ListView and ListTile Widget",
+      navigation: MyListview.nameRoute,
+      desc:
+          "Pratice Widget Layouting / invisible widget ListView and ListTile Widget",
     ),
   ];
   @override

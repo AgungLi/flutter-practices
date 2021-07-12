@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_practices/pages/myHomepage.dart';
+import 'package:flutter_practices/pages/myListview.dart';
 import 'package:flutter_practices/pages/pageTextwidget.dart';
 import 'package:flutter_practices/pages/widgetLayouting.dart';
 
@@ -22,6 +23,7 @@ class _MyAppState extends State<MyApp> {
         MyHomepage.nameRoute: (context) => MyHomepage(),
         PageTextwidget.nameRoute: (context) => PageTextwidget(),
         WidgetLayouting.nameRoute: (context) => WidgetLayouting(),
+        MyListview.nameRoute: (context) => MyListview(),
       },
     );
   }
