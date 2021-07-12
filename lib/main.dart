@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_practices/pages/myHomepage.dart';
 import 'package:flutter_practices/pages/myListview.dart';
+import 'package:flutter_practices/pages/pageExtractWidget.dart';
 import 'package:flutter_practices/pages/pageImageWidget.dart';
 import 'package:flutter_practices/pages/pageTextwidget.dart';
 import 'package:flutter_practices/pages/widgetLayouting.dart';
@@ -26,6 +27,7 @@ class _MyAppState extends State<MyApp> {
         WidgetLayouting.nameRoute: (context) => WidgetLayouting(),
         MyListview.nameRoute: (context) => MyListview(),
         PageImagWidget.nameRoute: (context) => PageImagWidget(),
+        PageExtractWidget.nameRoute: (context) => PageExtractWidget(),
       },
     );
   }
