@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_practices/pages/pageTextwidget.dart';
+import 'package:flutter_practices/pages/widgetLayouting.dart';
 
 class MyHomepage extends StatelessWidget {
   static const nameRoute = '/myhomepage';
@@ -9,6 +10,12 @@ class MyHomepage extends StatelessWidget {
       practiceName: "Text Widget",
       navigation: PageTextwidget.nameRoute,
       desc: "Pratice Text Widget",
+    ),
+    PageItem(
+      icon: Icon(Icons.pages),
+      practiceName: "Layouting Widget",
+      navigation: WidgetLayouting.nameRoute,
+      desc: "Pratice Widge Layouting / invisible widget",
     ),
   ];
   @override
