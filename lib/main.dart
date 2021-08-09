@@ -8,6 +8,7 @@ import 'package:flutter_practices/pages/pageImageWidget.dart';
 import 'package:flutter_practices/pages/pageMappinglist.dart';
 import 'package:flutter_practices/pages/pageStateful.dart';
 import 'package:flutter_practices/pages/pageTabbar.dart';
+import 'package:flutter_practices/pages/pageTextfield.dart';
 import 'package:flutter_practices/pages/pageTextwidget.dart';
 import 'package:flutter_practices/pages/widgetLayouting.dart';
 
@@ -38,6 +39,7 @@ class _MyAppState extends State<MyApp> {
         PageDateformat.nameRoute: (context) => PageDateformat(),
         PageAppbarWidget.nameRoute: (context) => PageAppbarWidget(),
         PageTabbar.nameRoute: (context) => PageTabbar(),
+        PageTextField.nameRoute: (context) => PageTextField(),
       },
     );
   }

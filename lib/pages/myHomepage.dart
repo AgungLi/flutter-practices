@@ -7,6 +7,7 @@ import 'package:flutter_practices/pages/pageImageWidget.dart';
 import 'package:flutter_practices/pages/pageMappinglist.dart';
 import 'package:flutter_practices/pages/pageStateful.dart';
 import 'package:flutter_practices/pages/pageTabbar.dart';
+import 'package:flutter_practices/pages/pageTextfield.dart';
 import 'package:flutter_practices/pages/pageTextwidget.dart';
 import 'package:flutter_practices/pages/widgetLayouting.dart';
 
@@ -74,6 +75,12 @@ class MyHomepage extends StatelessWidget {
       navigation: PageTabbar.nameRoute,
       desc: "Practice Tab Bar Widget",
     ),
+    PageItem(
+      icon: Icon(Icons.view_column),
+      practiceName: "Text Field",
+      navigation: PageTextField.nameRoute,
+      desc: "Practice Text Field widget",
+    ),
   ];
   @override
   Widget build(BuildContext context) {
@@ -94,6 +101,7 @@ class PageItem extends StatelessWidget {
   final String desc;
 
   PageItem({this.icon, this.practiceName, this.navigation, this.desc});
+
   @override
   Widget build(BuildContext context) {
     return ListTile(
@@ -103,7 +111,6 @@ class PageItem extends StatelessWidget {
       onTap: () {
         Navigator.of(context).pushNamed(navigation);
       },
-      trailing: Text("10:00 PM"),
     );
   }
 }
