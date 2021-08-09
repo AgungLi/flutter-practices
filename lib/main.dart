@@ -13,6 +13,7 @@ import 'package:flutter_practices/pages/pageMappinglist.dart';
 import 'package:flutter_practices/pages/pageNavigation.dart';
 import 'package:flutter_practices/pages/pageRoutes.dart';
 import 'package:flutter_practices/pages/pageStateful.dart';
+import 'package:flutter_practices/pages/pageSwitch.dart';
 import 'package:flutter_practices/pages/pageTabbar.dart';
 import 'package:flutter_practices/pages/pageTextfield.dart';
 import 'package:flutter_practices/pages/pageTextwidget.dart';
@@ -52,6 +53,7 @@ class _MyAppState extends State<MyApp> {
         PageNavigation.nameRoute: (context) => PageNavigation(),
         PageRoutes.nameRoute: (context) => PageRoutes(),
         PageDrawer.nameRoute: (context) => PageDrawer(),
+        PageSwitch.nameRoute: (context) => PageSwitch(),
       },
     );
   }
