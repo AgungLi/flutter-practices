@@ -8,6 +8,7 @@ import 'package:flutter_practices/pages/pageExtractWidget.dart';
 import 'package:flutter_practices/pages/pageGridview.dart';
 import 'package:flutter_practices/pages/pageImageWidget.dart';
 import 'package:flutter_practices/pages/pageMappinglist.dart';
+import 'package:flutter_practices/pages/pageNavigation.dart';
 import 'package:flutter_practices/pages/pageStateful.dart';
 import 'package:flutter_practices/pages/pageTabbar.dart';
 import 'package:flutter_practices/pages/pageTextfield.dart';
@@ -101,6 +102,12 @@ class MyHomepage extends StatelessWidget {
       practiceName: "Dismissible",
       navigation: PageDismissible.nameRoute,
       desc: "Practice Dismissible",
+    ),
+    PageItem(
+      icon: Icon(Icons.navigate_next),
+      practiceName: "Navigation",
+      navigation: PageNavigation.nameRoute,
+      desc: "Practice Navigation",
     ),
   ];
   @override
