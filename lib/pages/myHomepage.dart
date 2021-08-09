@@ -3,6 +3,7 @@ import 'package:flutter_practices/pages/myListview.dart';
 import 'package:flutter_practices/pages/pageAppbarWidget.dart';
 import 'package:flutter_practices/pages/pageDateformat.dart';
 import 'package:flutter_practices/pages/pageDialog.dart';
+import 'package:flutter_practices/pages/pageDismissible.dart';
 import 'package:flutter_practices/pages/pageExtractWidget.dart';
 import 'package:flutter_practices/pages/pageGridview.dart';
 import 'package:flutter_practices/pages/pageImageWidget.dart';
@@ -94,6 +95,12 @@ class MyHomepage extends StatelessWidget {
       practiceName: "Dialog",
       navigation: PageDialog.nameRoute,
       desc: "Practice Dialog",
+    ),
+    PageItem(
+      icon: Icon(Icons.drafts),
+      practiceName: "Dismissible",
+      navigation: PageDismissible.nameRoute,
+      desc: "Practice Dismissible",
     ),
   ];
   @override
