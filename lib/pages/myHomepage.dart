@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_practices/pages/myListview.dart';
 import 'package:flutter_practices/pages/pageExtractWidget.dart';
 import 'package:flutter_practices/pages/pageImageWidget.dart';
+import 'package:flutter_practices/pages/pageStateful.dart';
 import 'package:flutter_practices/pages/pageTextwidget.dart';
 import 'package:flutter_practices/pages/widgetLayouting.dart';
 
@@ -38,6 +39,12 @@ class MyHomepage extends StatelessWidget {
       practiceName: "Extract Widget",
       navigation: PageExtractWidget.nameRoute,
       desc: "Practice Extract Widget",
+    ),
+    PageItem(
+      icon: Icon(Icons.fullscreen_exit_rounded),
+      practiceName: "Statefull Widget",
+      navigation: PageStatefull.nameRoute,
+      desc: "Practice Statefull Widget",
     ),
   ];
   @override
