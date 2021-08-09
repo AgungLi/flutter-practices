@@ -4,6 +4,7 @@ import 'package:flutter_practices/pages/pageAppbarWidget.dart';
 import 'package:flutter_practices/pages/pageDateformat.dart';
 import 'package:flutter_practices/pages/pageDialog.dart';
 import 'package:flutter_practices/pages/pageDismissible.dart';
+import 'package:flutter_practices/pages/pageDrawer.dart';
 import 'package:flutter_practices/pages/pageExtractWidget.dart';
 import 'package:flutter_practices/pages/pageGridview.dart';
 import 'package:flutter_practices/pages/pageImageWidget.dart';
@@ -115,6 +116,12 @@ class MyHomepage extends StatelessWidget {
       practiceName: "Page Routes",
       navigation: PageRoutes.nameRoute,
       desc: "Practice Routes",
+    ),
+    PageItem(
+      icon: Icon(Icons.menu),
+      practiceName: "Drawer",
+      navigation: PageDrawer.nameRoute,
+      desc: "Practice Drawers",
     ),
   ];
   @override

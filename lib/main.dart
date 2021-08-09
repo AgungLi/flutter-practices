@@ -5,6 +5,7 @@ import 'package:flutter_practices/pages/pageAppbarWidget.dart';
 import 'package:flutter_practices/pages/pageDateformat.dart';
 import 'package:flutter_practices/pages/pageDialog.dart';
 import 'package:flutter_practices/pages/pageDismissible.dart';
+import 'package:flutter_practices/pages/pageDrawer.dart';
 import 'package:flutter_practices/pages/pageExtractWidget.dart';
 import 'package:flutter_practices/pages/pageGridview.dart';
 import 'package:flutter_practices/pages/pageImageWidget.dart';
@@ -50,6 +51,7 @@ class _MyAppState extends State<MyApp> {
         PageDismissible.nameRoute: (context) => PageDismissible(),
         PageNavigation.nameRoute: (context) => PageNavigation(),
         PageRoutes.nameRoute: (context) => PageRoutes(),
+        PageDrawer.nameRoute: (context) => PageDrawer(),
       },
     );
   }
