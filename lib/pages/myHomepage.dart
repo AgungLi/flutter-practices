@@ -6,6 +6,7 @@ import 'package:flutter_practices/pages/pageExtractWidget.dart';
 import 'package:flutter_practices/pages/pageImageWidget.dart';
 import 'package:flutter_practices/pages/pageMappinglist.dart';
 import 'package:flutter_practices/pages/pageStateful.dart';
+import 'package:flutter_practices/pages/pageTabbar.dart';
 import 'package:flutter_practices/pages/pageTextwidget.dart';
 import 'package:flutter_practices/pages/widgetLayouting.dart';
 
@@ -66,6 +67,12 @@ class MyHomepage extends StatelessWidget {
       practiceName: "App Bar Widget",
       navigation: PageAppbarWidget.nameRoute,
       desc: "Practice App Bar Widget",
+    ),
+    PageItem(
+      icon: Icon(Icons.tab),
+      practiceName: "Tabbar Widget",
+      navigation: PageTabbar.nameRoute,
+      desc: "Practice Tab Bar Widget",
     ),
   ];
   @override
