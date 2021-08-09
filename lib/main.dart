@@ -10,6 +10,7 @@ import 'package:flutter_practices/pages/pageGridview.dart';
 import 'package:flutter_practices/pages/pageImageWidget.dart';
 import 'package:flutter_practices/pages/pageMappinglist.dart';
 import 'package:flutter_practices/pages/pageNavigation.dart';
+import 'package:flutter_practices/pages/pageRoutes.dart';
 import 'package:flutter_practices/pages/pageStateful.dart';
 import 'package:flutter_practices/pages/pageTabbar.dart';
 import 'package:flutter_practices/pages/pageTextfield.dart';
@@ -48,6 +49,7 @@ class _MyAppState extends State<MyApp> {
         PageDialog.nameRoute: (context) => PageDialog(),
         PageDismissible.nameRoute: (context) => PageDismissible(),
         PageNavigation.nameRoute: (context) => PageNavigation(),
+        PageRoutes.nameRoute: (context) => PageRoutes(),
       },
     );
   }
