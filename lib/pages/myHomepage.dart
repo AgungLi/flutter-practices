@@ -17,6 +17,7 @@ import 'package:flutter_practices/pages/pageSwitch.dart';
 import 'package:flutter_practices/pages/pageTabbar.dart';
 import 'package:flutter_practices/pages/pageTextfield.dart';
 import 'package:flutter_practices/pages/pageTextwidget.dart';
+import 'package:flutter_practices/pages/pageTheme.dart';
 import 'package:flutter_practices/pages/widgetLayouting.dart';
 
 class MyHomepage extends StatelessWidget {
@@ -136,6 +137,12 @@ class MyHomepage extends StatelessWidget {
       practiceName: "Model",
       navigation: MyModel.nameRoute,
       desc: "Practice Model",
+    ),
+    PageItem(
+      icon: Icon(Icons.thermostat_rounded),
+      practiceName: "Theme",
+      navigation: PageTheme.nameRoute,
+      desc: "Practice Theme",
     ),
   ];
   @override

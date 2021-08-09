@@ -18,6 +18,7 @@ import 'package:flutter_practices/pages/pageSwitch.dart';
 import 'package:flutter_practices/pages/pageTabbar.dart';
 import 'package:flutter_practices/pages/pageTextfield.dart';
 import 'package:flutter_practices/pages/pageTextwidget.dart';
+import 'package:flutter_practices/pages/pageTheme.dart';
 import 'package:flutter_practices/pages/widgetLayouting.dart';
 
 void main() {
@@ -56,6 +57,7 @@ class _MyAppState extends State<MyApp> {
         PageDrawer.nameRoute: (context) => PageDrawer(),
         PageSwitch.nameRoute: (context) => PageSwitch(),
         MyModel.nameRoute: (context) => MyModel(),
+        PageTheme.nameRoute: (context) => PageTheme(),
       },
     );
   }
