@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_practices/pages/myListview.dart';
 import 'package:flutter_practices/pages/pageExtractWidget.dart';
 import 'package:flutter_practices/pages/pageImageWidget.dart';
+import 'package:flutter_practices/pages/pageMappinglist.dart';
 import 'package:flutter_practices/pages/pageStateful.dart';
 import 'package:flutter_practices/pages/pageTextwidget.dart';
 import 'package:flutter_practices/pages/widgetLayouting.dart';
@@ -45,6 +46,12 @@ class MyHomepage extends StatelessWidget {
       practiceName: "Statefull Widget",
       navigation: PageStatefull.nameRoute,
       desc: "Practice Statefull Widget",
+    ),
+    PageItem(
+      icon: Icon(Icons.map_outlined),
+      practiceName: "Mapping List",
+      navigation: PageMappinglist.nameRoute,
+      desc: "Practice Mapping List",
     ),
   ];
   @override
