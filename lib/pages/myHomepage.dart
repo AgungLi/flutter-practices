@@ -3,6 +3,7 @@ import 'package:flutter_practices/pages/myListview.dart';
 import 'package:flutter_practices/pages/pageAppbarWidget.dart';
 import 'package:flutter_practices/pages/pageDateformat.dart';
 import 'package:flutter_practices/pages/pageExtractWidget.dart';
+import 'package:flutter_practices/pages/pageGridview.dart';
 import 'package:flutter_practices/pages/pageImageWidget.dart';
 import 'package:flutter_practices/pages/pageMappinglist.dart';
 import 'package:flutter_practices/pages/pageStateful.dart';
@@ -80,6 +81,12 @@ class MyHomepage extends StatelessWidget {
       practiceName: "Text Field",
       navigation: PageTextField.nameRoute,
       desc: "Practice Text Field widget",
+    ),
+    PageItem(
+      icon: Icon(Icons.grid_view),
+      practiceName: "Grid View",
+      navigation: PageGridview.nameRoute,
+      desc: "Practice GridView Widget",
     ),
   ];
   @override

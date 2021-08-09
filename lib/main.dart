@@ -4,6 +4,7 @@ import 'package:flutter_practices/pages/myListview.dart';
 import 'package:flutter_practices/pages/pageAppbarWidget.dart';
 import 'package:flutter_practices/pages/pageDateformat.dart';
 import 'package:flutter_practices/pages/pageExtractWidget.dart';
+import 'package:flutter_practices/pages/pageGridview.dart';
 import 'package:flutter_practices/pages/pageImageWidget.dart';
 import 'package:flutter_practices/pages/pageMappinglist.dart';
 import 'package:flutter_practices/pages/pageStateful.dart';
@@ -40,6 +41,7 @@ class _MyAppState extends State<MyApp> {
         PageAppbarWidget.nameRoute: (context) => PageAppbarWidget(),
         PageTabbar.nameRoute: (context) => PageTabbar(),
         PageTextField.nameRoute: (context) => PageTextField(),
+        PageGridview.nameRoute: (context) => PageGridview(),
       },
     );
   }
