@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_practices/pages/myListview.dart';
+import 'package:flutter_practices/pages/pageAppbarWidget.dart';
 import 'package:flutter_practices/pages/pageDateformat.dart';
 import 'package:flutter_practices/pages/pageExtractWidget.dart';
 import 'package:flutter_practices/pages/pageImageWidget.dart';
@@ -59,6 +60,12 @@ class MyHomepage extends StatelessWidget {
       practiceName: "Date Time",
       navigation: PageDateformat.nameRoute,
       desc: "Practice Date Format",
+    ),
+    PageItem(
+      icon: Icon(Icons.bar_chart),
+      practiceName: "App Bar Widget",
+      navigation: PageAppbarWidget.nameRoute,
+      desc: "Practice App Bar Widget",
     ),
   ];
   @override
