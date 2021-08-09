@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_practices/pages/myListview.dart';
+import 'package:flutter_practices/pages/pageDateformat.dart';
 import 'package:flutter_practices/pages/pageExtractWidget.dart';
 import 'package:flutter_practices/pages/pageImageWidget.dart';
 import 'package:flutter_practices/pages/pageMappinglist.dart';
@@ -52,6 +53,12 @@ class MyHomepage extends StatelessWidget {
       practiceName: "Mapping List",
       navigation: PageMappinglist.nameRoute,
       desc: "Practice Mapping List",
+    ),
+    PageItem(
+      icon: Icon(Icons.date_range),
+      practiceName: "Date Time",
+      navigation: PageDateformat.nameRoute,
+      desc: "Practice Date Format",
     ),
   ];
   @override

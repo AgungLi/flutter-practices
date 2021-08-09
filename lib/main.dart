@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_practices/pages/myHomepage.dart';
 import 'package:flutter_practices/pages/myListview.dart';
+import 'package:flutter_practices/pages/pageDateformat.dart';
 import 'package:flutter_practices/pages/pageExtractWidget.dart';
 import 'package:flutter_practices/pages/pageImageWidget.dart';
 import 'package:flutter_practices/pages/pageMappinglist.dart';
@@ -32,6 +33,7 @@ class _MyAppState extends State<MyApp> {
         PageExtractWidget.nameRoute: (context) => PageExtractWidget(),
         PageStatefull.nameRoute: (context) => PageStatefull(),
         PageMappinglist.nameRoute: (context) => PageMappinglist(),
+        PageDateformat.nameRoute: (context) => PageDateformat(),
       },
     );
   }
