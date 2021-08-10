@@ -1,15 +1,24 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_practices/screens/cart_screen.dart';
 import '../providers/all_products.dart';
 import 'package:provider/provider.dart';
 import '../screens/products_overview_screen.dart';
 import '../screens/product_detail_screen.dart';
+import '../providers/cart.dart';
 
 class PageManageProvider extends StatelessWidget {
   static const nameRoute = '\pagemanageprovider';
   @override
   Widget build(BuildContext context) {
-    return ChangeNotifierProvider(
-      create: (context) => Products(),
+    return MultiProvider(
+      providers: [
+        ChangeNotifierProvider(
+          create: (context) => Cart(),
+        ),
+        ChangeNotifierProvider(
+          create: (context) => Products(),
+        ),
+      ],
       child: MaterialApp(
         debugShowCheckedModeBanner: false,
         title: 'MyShop',
@@ -21,6 +30,7 @@ class PageManageProvider extends StatelessWidget {
         home: ProductsOverviewScreen(),
         routes: {
           ProductDetailScreen.routeName: (ctx) => ProductDetailScreen(),
+          CartScreen.routeName: (ctx) => CartScreen(),
         },
       ),
     );

@@ -44,6 +44,7 @@ class _MyAppState extends State<MyApp> {
       theme: ThemeData(
         brightness: Brightness.dark,
       ),
+      debugShowCheckedModeBanner: false,
       home: MyHomepage(),
       initialRoute: MyHomepage.nameRoute,
       routes: {
