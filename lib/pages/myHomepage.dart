@@ -6,6 +6,7 @@ import 'package:flutter_practices/pages/pageDialog.dart';
 import 'package:flutter_practices/pages/pageDismissible.dart';
 import 'package:flutter_practices/pages/pageDrawer.dart';
 import 'package:flutter_practices/pages/pageExtractWidget.dart';
+import 'package:flutter_practices/pages/pageFittedBox.dart';
 import 'package:flutter_practices/pages/pageFlexibleExpanded.dart';
 import 'package:flutter_practices/pages/pageGridview.dart';
 import 'package:flutter_practices/pages/pageImageWidget.dart';
@@ -157,6 +158,12 @@ class MyHomepage extends StatelessWidget {
       practiceName: "Flexible and Expended",
       navigation: PageFlexibelExpended.nameRoute,
       desc: "Practice Flexible and expended",
+    ),
+    PageItem(
+      icon: Icon(Icons.fit_screen),
+      practiceName: "Fitted Box",
+      navigation: PageFittedBox.nameRoute,
+      desc: "Practice Fitted Box",
     ),
   ];
   @override

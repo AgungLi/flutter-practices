@@ -7,6 +7,7 @@ import 'package:flutter_practices/pages/pageDialog.dart';
 import 'package:flutter_practices/pages/pageDismissible.dart';
 import 'package:flutter_practices/pages/pageDrawer.dart';
 import 'package:flutter_practices/pages/pageExtractWidget.dart';
+import 'package:flutter_practices/pages/pageFittedBox.dart';
 import 'package:flutter_practices/pages/pageFlexibleExpanded.dart';
 import 'package:flutter_practices/pages/pageGridview.dart';
 import 'package:flutter_practices/pages/pageImageWidget.dart';
@@ -65,6 +66,7 @@ class _MyAppState extends State<MyApp> {
         PageTheme.nameRoute: (context) => PageTheme(),
         PageMediaquery.nameRoute: (context) => PageMediaquery(),
         PageFlexibelExpended.nameRoute: (context) => PageFlexibelExpended(),
+        PageFittedBox.nameRoute: (context) => PageFittedBox(),
       },
     );
   }
