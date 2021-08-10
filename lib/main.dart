@@ -4,6 +4,7 @@ import 'package:flutter_practices/pages/myListview.dart';
 import 'package:flutter_practices/pages/pageAppbarWidget.dart';
 import 'package:flutter_practices/pages/pageCupertino.dart';
 import 'package:flutter_practices/pages/pageDateformat.dart';
+import 'package:flutter_practices/pages/pageDatepicker.dart';
 import 'package:flutter_practices/pages/pageDialog.dart';
 import 'package:flutter_practices/pages/pageDismissible.dart';
 import 'package:flutter_practices/pages/pageDrawer.dart';
@@ -71,6 +72,7 @@ class _MyAppState extends State<MyApp> {
         PageFittedBox.nameRoute: (context) => PageFittedBox(),
         PageLayoutBuilder.nameRoute: (context) => PageLayoutBuilder(),
         PageCupertino.nameRoute: (context) => PageCupertino(),
+        PageDatepicker.nameRoute: (context) => PageDatepicker(),
       },
     );
   }

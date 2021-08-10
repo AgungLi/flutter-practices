@@ -3,6 +3,7 @@ import 'package:flutter_practices/pages/myListview.dart';
 import 'package:flutter_practices/pages/pageAppbarWidget.dart';
 import 'package:flutter_practices/pages/pageCupertino.dart';
 import 'package:flutter_practices/pages/pageDateformat.dart';
+import 'package:flutter_practices/pages/pageDatepicker.dart';
 import 'package:flutter_practices/pages/pageDialog.dart';
 import 'package:flutter_practices/pages/pageDismissible.dart';
 import 'package:flutter_practices/pages/pageDrawer.dart';
@@ -178,6 +179,12 @@ class MyHomepage extends StatelessWidget {
       practiceName: "Cuppertion Design",
       navigation: PageCupertino.nameRoute,
       desc: "Practice Cuppertion Design",
+    ),
+    PageItem(
+      icon: Icon(Icons.date_range_outlined),
+      practiceName: "Date Picker",
+      navigation: PageDatepicker.nameRoute,
+      desc: "Practice Date Picker",
     ),
   ];
   @override
