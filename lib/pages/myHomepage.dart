@@ -13,6 +13,7 @@ import 'package:flutter_practices/pages/pageFlexibleExpanded.dart';
 import 'package:flutter_practices/pages/pageGridview.dart';
 import 'package:flutter_practices/pages/pageImageWidget.dart';
 import 'package:flutter_practices/pages/pageLayoutBuilder.dart';
+import 'package:flutter_practices/pages/pageManagementprovider.dart';
 import 'package:flutter_practices/pages/pageMappinglist.dart';
 import 'package:flutter_practices/pages/pageMediaquery.dart';
 import 'package:flutter_practices/pages/pageModel.dart';
@@ -185,6 +186,12 @@ class MyHomepage extends StatelessWidget {
       practiceName: "Date Picker",
       navigation: PageDatepicker.nameRoute,
       desc: "Practice Date Picker",
+    ),
+    PageItem(
+      icon: Icon(Icons.model_training_sharp),
+      practiceName: "State Manage Provider",
+      navigation: PageManageProvider.nameRoute,
+      desc: "Practice State Manage Provider",
     ),
   ];
   @override

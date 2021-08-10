@@ -24,6 +24,7 @@ dependencies:
   flutter:
     sdk: flutter
   intl: ^0.16.0
+  provider: ^5.0.0-nullsafety.5
   
 
 
@@ -63,10 +64,16 @@ flutter:
   # "family" key with the font family name, and a "fonts" key with a
   # list giving the asset and other descriptors for the font. For
   # example:
-  fonts:
-    - family: crashlanding
-      fonts:
-        - asset: assets/font/crashlanding-bb.ttf
+fonts:
+  - family: Lato
+    fonts:
+      - asset: assets/font/Lato-Regular.ttf
+      - asset: assets/font/Lato-Bold.ttf
+        weight: 700
+  - family: Anton
+    fonts:
+      - asset: assets/font/Anton-Regular.ttf
+  
   #       - asset: fonts/Schyler-Italic.ttf
   #         style: italic
   #   - family: Trajan Pro
