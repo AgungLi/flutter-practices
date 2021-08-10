@@ -32,7 +32,9 @@ class PageLayoutBuilder extends StatelessWidget {
 
 class MyContainer extends StatelessWidget {
   final double widthApp;
+
   MyContainer(this.widthApp);
+
   @override
   Widget build(BuildContext context) {
     return LayoutBuilder(

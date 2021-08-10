@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_practices/pages/myListview.dart';
 import 'package:flutter_practices/pages/pageAppbarWidget.dart';
+import 'package:flutter_practices/pages/pageCupertino.dart';
 import 'package:flutter_practices/pages/pageDateformat.dart';
 import 'package:flutter_practices/pages/pageDialog.dart';
 import 'package:flutter_practices/pages/pageDismissible.dart';
@@ -171,6 +172,12 @@ class MyHomepage extends StatelessWidget {
       practiceName: "Layour Builder",
       navigation: PageLayoutBuilder.nameRoute,
       desc: "Practice Layour Builder",
+    ),
+    PageItem(
+      icon: Icon(Icons.ios_share),
+      practiceName: "Cuppertion Design",
+      navigation: PageCupertino.nameRoute,
+      desc: "Practice Cuppertion Design",
     ),
   ];
   @override

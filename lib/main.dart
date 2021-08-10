@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_practices/pages/myHomepage.dart';
 import 'package:flutter_practices/pages/myListview.dart';
 import 'package:flutter_practices/pages/pageAppbarWidget.dart';
+import 'package:flutter_practices/pages/pageCupertino.dart';
 import 'package:flutter_practices/pages/pageDateformat.dart';
 import 'package:flutter_practices/pages/pageDialog.dart';
 import 'package:flutter_practices/pages/pageDismissible.dart';
@@ -69,6 +70,7 @@ class _MyAppState extends State<MyApp> {
         PageFlexibelExpended.nameRoute: (context) => PageFlexibelExpended(),
         PageFittedBox.nameRoute: (context) => PageFittedBox(),
         PageLayoutBuilder.nameRoute: (context) => PageLayoutBuilder(),
+        PageCupertino.nameRoute: (context) => PageCupertino(),
       },
     );
   }
