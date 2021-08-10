@@ -1,4 +1,6 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_practices/pages/post_home_provider.dart';
+import 'package:flutter_practices/pages/post_home_stateful.dart';
 import 'package:flutter_practices/pages/myListview.dart';
 import 'package:flutter_practices/pages/pageAppbarWidget.dart';
 import 'package:flutter_practices/pages/pageCupertino.dart';
@@ -199,6 +201,18 @@ class MyHomepage extends StatelessWidget {
       practiceName: "Provider Review",
       navigation: PageProviderReview.nameRoute,
       desc: "Practice Provider Review",
+    ),
+    PageItem(
+      icon: Icon(Icons.http),
+      practiceName: "HTTP Request Post Method StateFull",
+      navigation: HomeStateful.nameRoute,
+      desc: "Practice HTTP Request Post Method",
+    ),
+    PageItem(
+      icon: Icon(Icons.http_sharp),
+      practiceName: "HTTP Request Post Method Provider",
+      navigation: HomeHttpProvider.nameRoute,
+      desc: "Practice HTTP Request Post Method Provider",
     ),
   ];
   @override

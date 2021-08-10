@@ -1,4 +1,6 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_practices/pages/post_home_provider.dart';
+import 'package:flutter_practices/pages/post_home_stateful.dart';
 import 'package:flutter_practices/pages/myHomepage.dart';
 import 'package:flutter_practices/pages/myListview.dart';
 import 'package:flutter_practices/pages/pageAppbarWidget.dart';
@@ -78,6 +80,8 @@ class _MyAppState extends State<MyApp> {
         PageDatepicker.nameRoute: (context) => PageDatepicker(),
         PageManageProvider.nameRoute: (context) => PageManageProvider(),
         PageProviderReview.nameRoute: (context) => PageProviderReview(),
+        HomeStateful.nameRoute: (context) => HomeStateful(),
+        HomeHttpProvider.nameRoute: (context) => HomeHttpProvider(),
       },
     );
   }
