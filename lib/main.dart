@@ -7,6 +7,7 @@ import 'package:flutter_practices/pages/pageDialog.dart';
 import 'package:flutter_practices/pages/pageDismissible.dart';
 import 'package:flutter_practices/pages/pageDrawer.dart';
 import 'package:flutter_practices/pages/pageExtractWidget.dart';
+import 'package:flutter_practices/pages/pageFlexibleExpanded.dart';
 import 'package:flutter_practices/pages/pageGridview.dart';
 import 'package:flutter_practices/pages/pageImageWidget.dart';
 import 'package:flutter_practices/pages/pageMappinglist.dart';
@@ -35,6 +36,9 @@ class _MyAppState extends State<MyApp> {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
+      theme: ThemeData(
+        brightness: Brightness.dark,
+      ),
       home: MyHomepage(),
       initialRoute: MyHomepage.nameRoute,
       routes: {
@@ -60,6 +64,7 @@ class _MyAppState extends State<MyApp> {
         MyModel.nameRoute: (context) => MyModel(),
         PageTheme.nameRoute: (context) => PageTheme(),
         PageMediaquery.nameRoute: (context) => PageMediaquery(),
+        PageFlexibelExpended.nameRoute: (context) => PageFlexibelExpended(),
       },
     );
   }

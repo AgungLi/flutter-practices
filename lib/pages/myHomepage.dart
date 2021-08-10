@@ -6,6 +6,7 @@ import 'package:flutter_practices/pages/pageDialog.dart';
 import 'package:flutter_practices/pages/pageDismissible.dart';
 import 'package:flutter_practices/pages/pageDrawer.dart';
 import 'package:flutter_practices/pages/pageExtractWidget.dart';
+import 'package:flutter_practices/pages/pageFlexibleExpanded.dart';
 import 'package:flutter_practices/pages/pageGridview.dart';
 import 'package:flutter_practices/pages/pageImageWidget.dart';
 import 'package:flutter_practices/pages/pageMappinglist.dart';
@@ -150,6 +151,12 @@ class MyHomepage extends StatelessWidget {
       practiceName: "Media Query",
       navigation: PageMediaquery.nameRoute,
       desc: "Practice Media Query",
+    ),
+    PageItem(
+      icon: Icon(Icons.expand),
+      practiceName: "Flexible and Expended",
+      navigation: PageFlexibelExpended.nameRoute,
+      desc: "Practice Flexible and expended",
     ),
   ];
   @override
