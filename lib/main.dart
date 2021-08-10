@@ -11,6 +11,7 @@ import 'package:flutter_practices/pages/pageFittedBox.dart';
 import 'package:flutter_practices/pages/pageFlexibleExpanded.dart';
 import 'package:flutter_practices/pages/pageGridview.dart';
 import 'package:flutter_practices/pages/pageImageWidget.dart';
+import 'package:flutter_practices/pages/pageLayoutBuilder.dart';
 import 'package:flutter_practices/pages/pageMappinglist.dart';
 import 'package:flutter_practices/pages/pageMediaquery.dart';
 import 'package:flutter_practices/pages/pageModel.dart';
@@ -67,6 +68,7 @@ class _MyAppState extends State<MyApp> {
         PageMediaquery.nameRoute: (context) => PageMediaquery(),
         PageFlexibelExpended.nameRoute: (context) => PageFlexibelExpended(),
         PageFittedBox.nameRoute: (context) => PageFittedBox(),
+        PageLayoutBuilder.nameRoute: (context) => PageLayoutBuilder(),
       },
     );
   }

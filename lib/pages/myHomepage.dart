@@ -10,6 +10,7 @@ import 'package:flutter_practices/pages/pageFittedBox.dart';
 import 'package:flutter_practices/pages/pageFlexibleExpanded.dart';
 import 'package:flutter_practices/pages/pageGridview.dart';
 import 'package:flutter_practices/pages/pageImageWidget.dart';
+import 'package:flutter_practices/pages/pageLayoutBuilder.dart';
 import 'package:flutter_practices/pages/pageMappinglist.dart';
 import 'package:flutter_practices/pages/pageMediaquery.dart';
 import 'package:flutter_practices/pages/pageModel.dart';
@@ -164,6 +165,12 @@ class MyHomepage extends StatelessWidget {
       practiceName: "Fitted Box",
       navigation: PageFittedBox.nameRoute,
       desc: "Practice Fitted Box",
+    ),
+    PageItem(
+      icon: Icon(Icons.layers_outlined),
+      practiceName: "Layour Builder",
+      navigation: PageLayoutBuilder.nameRoute,
+      desc: "Practice Layour Builder",
     ),
   ];
   @override
