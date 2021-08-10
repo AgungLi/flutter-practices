@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import '../models/product.dart';
+import './product.dart';
 import 'dart:math';
 
 class Products with ChangeNotifier {
@@ -16,7 +16,7 @@ class Products with ChangeNotifier {
     },
   );
   List<Product> get allproducts {
-    return [..._allproducts];
+    return [..._allproducts]; // ... Spread Collection
   }
 
   Product findById(productId) {
