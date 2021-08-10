@@ -9,6 +9,7 @@ import 'package:flutter_practices/pages/pageExtractWidget.dart';
 import 'package:flutter_practices/pages/pageGridview.dart';
 import 'package:flutter_practices/pages/pageImageWidget.dart';
 import 'package:flutter_practices/pages/pageMappinglist.dart';
+import 'package:flutter_practices/pages/pageMediaquery.dart';
 import 'package:flutter_practices/pages/pageModel.dart';
 import 'package:flutter_practices/pages/pageNavigation.dart';
 import 'package:flutter_practices/pages/pageRoutes.dart';
@@ -143,6 +144,12 @@ class MyHomepage extends StatelessWidget {
       practiceName: "Theme",
       navigation: PageTheme.nameRoute,
       desc: "Practice Theme",
+    ),
+    PageItem(
+      icon: Icon(Icons.query_builder),
+      practiceName: "Media Query",
+      navigation: PageMediaquery.nameRoute,
+      desc: "Practice Media Query",
     ),
   ];
   @override

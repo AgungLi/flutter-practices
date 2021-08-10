@@ -10,6 +10,7 @@ import 'package:flutter_practices/pages/pageExtractWidget.dart';
 import 'package:flutter_practices/pages/pageGridview.dart';
 import 'package:flutter_practices/pages/pageImageWidget.dart';
 import 'package:flutter_practices/pages/pageMappinglist.dart';
+import 'package:flutter_practices/pages/pageMediaquery.dart';
 import 'package:flutter_practices/pages/pageModel.dart';
 import 'package:flutter_practices/pages/pageNavigation.dart';
 import 'package:flutter_practices/pages/pageRoutes.dart';
@@ -58,6 +59,7 @@ class _MyAppState extends State<MyApp> {
         PageSwitch.nameRoute: (context) => PageSwitch(),
         MyModel.nameRoute: (context) => MyModel(),
         PageTheme.nameRoute: (context) => PageTheme(),
+        PageMediaquery.nameRoute: (context) => PageMediaquery(),
       },
     );
   }

@@ -44,7 +44,6 @@ class PageTheme extends StatelessWidget {
             ],
           ),
         ),
-        floatingActionButton: FloatingActionButton(),
       ),
     );
   }
