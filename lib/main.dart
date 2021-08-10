@@ -19,6 +19,7 @@ import 'package:flutter_practices/pages/pageMappinglist.dart';
 import 'package:flutter_practices/pages/pageMediaquery.dart';
 import 'package:flutter_practices/pages/pageModel.dart';
 import 'package:flutter_practices/pages/pageNavigation.dart';
+import 'package:flutter_practices/pages/pageProviderReview.dart';
 import 'package:flutter_practices/pages/pageRoutes.dart';
 import 'package:flutter_practices/pages/pageStateful.dart';
 import 'package:flutter_practices/pages/pageSwitch.dart';
@@ -76,6 +77,7 @@ class _MyAppState extends State<MyApp> {
         PageCupertino.nameRoute: (context) => PageCupertino(),
         PageDatepicker.nameRoute: (context) => PageDatepicker(),
         PageManageProvider.nameRoute: (context) => PageManageProvider(),
+        PageProviderReview.nameRoute: (context) => PageProviderReview(),
       },
     );
   }

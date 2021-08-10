@@ -18,6 +18,7 @@ import 'package:flutter_practices/pages/pageMappinglist.dart';
 import 'package:flutter_practices/pages/pageMediaquery.dart';
 import 'package:flutter_practices/pages/pageModel.dart';
 import 'package:flutter_practices/pages/pageNavigation.dart';
+import 'package:flutter_practices/pages/pageProviderReview.dart';
 import 'package:flutter_practices/pages/pageRoutes.dart';
 import 'package:flutter_practices/pages/pageStateful.dart';
 import 'package:flutter_practices/pages/pageSwitch.dart';
@@ -192,6 +193,12 @@ class MyHomepage extends StatelessWidget {
       practiceName: "State Manage Provider",
       navigation: PageManageProvider.nameRoute,
       desc: "Practice State Manage Provider",
+    ),
+    PageItem(
+      icon: Icon(Icons.rate_review),
+      practiceName: "Provider Review",
+      navigation: PageProviderReview.nameRoute,
+      desc: "Practice Provider Review",
     ),
   ];
   @override
