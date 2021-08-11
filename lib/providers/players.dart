@@ -66,14 +66,17 @@ class Players with ChangeNotifier {
     notifyListeners();
   }
 
-  void deletePlayer(String id, BuildContext context) {
-    _allPlayer.removeWhere((element) => element.id == id);
-    ScaffoldMessenger.of(context).showSnackBar(
-      SnackBar(
-        content: Text("Berhasil dihapus"),
-        duration: Duration(milliseconds: 500),
-      ),
+  Future<void> deletePlayer(String id) {
+    Uri url = Uri.parse(
+        "https://http-req-e5967-default-rtdb.firebaseio.com/players/$id.json");
+
+    return http.delete(url).then(
+      (response) {
+        _allPlayer.removeWhere((element) => element.id == id);
+
+        notifyListeners();
+      },
     );
-    notifyListeners();
+    // ===
   }
 }

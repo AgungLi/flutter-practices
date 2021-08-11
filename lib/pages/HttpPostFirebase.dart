@@ -90,7 +90,16 @@ class HomePage extends StatelessWidget {
                   ),
                   trailing: IconButton(
                     onPressed: () {
-                      allPlayerProvider.deletePlayer(id, context);
+                      allPlayerProvider.deletePlayer(id).then(
+                        (_) {
+                          ScaffoldMessenger.of(context).showSnackBar(
+                            SnackBar(
+                              content: Text("Berhasil dihapus"),
+                              duration: Duration(milliseconds: 500),
+                            ),
+                          );
+                        },
+                      );
                     },
                     icon: Icon(Icons.delete),
                   ),
