@@ -1,4 +1,6 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_practices/pages/get_home_provider.dart';
+import 'package:flutter_practices/pages/get_home_stateful.dart';
 import 'package:flutter_practices/pages/post_home_provider.dart';
 import 'package:flutter_practices/pages/post_home_stateful.dart';
 import 'package:flutter_practices/pages/myHomepage.dart';
@@ -82,6 +84,8 @@ class _MyAppState extends State<MyApp> {
         PageProviderReview.nameRoute: (context) => PageProviderReview(),
         HomeStateful.nameRoute: (context) => HomeStateful(),
         HomeHttpProvider.nameRoute: (context) => HomeHttpProvider(),
+        GetHomeStateFull.nameRoute: (context) => GetHomeStateFull(),
+        GetProvider.nameRoute: (context) => GetProvider(),
       },
     );
   }

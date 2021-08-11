@@ -1,4 +1,6 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_practices/pages/get_home_provider.dart';
+import 'package:flutter_practices/pages/get_home_stateful.dart';
 import 'package:flutter_practices/pages/post_home_provider.dart';
 import 'package:flutter_practices/pages/post_home_stateful.dart';
 import 'package:flutter_practices/pages/myListview.dart';
@@ -213,6 +215,18 @@ class MyHomepage extends StatelessWidget {
       practiceName: "HTTP Request Post Method Provider",
       navigation: HomeHttpProvider.nameRoute,
       desc: "Practice HTTP Request Post Method Provider",
+    ),
+    PageItem(
+      icon: Icon(Icons.http),
+      practiceName: "HTTP Request Get Method StateFull",
+      navigation: GetHomeStateFull.nameRoute,
+      desc: "Practice HTTP Request Get Method",
+    ),
+    PageItem(
+      icon: Icon(Icons.http),
+      practiceName: "HTTP Request Get Method Provider",
+      navigation: GetProvider.nameRoute,
+      desc: "Practice HTTP Request Get Method Provider",
     ),
   ];
   @override
