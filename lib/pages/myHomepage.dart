@@ -34,6 +34,7 @@ import 'package:flutter_practices/pages/pageTextwidget.dart';
 import 'package:flutter_practices/pages/pageTheme.dart';
 import 'package:flutter_practices/pages/widgetLayouting.dart';
 
+// ignore: must_be_immutable
 class MyHomepage extends StatelessWidget {
   static const nameRoute = '/myhomepage';
   List<PageItem> myItem = [

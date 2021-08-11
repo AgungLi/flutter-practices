@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:faker/faker.dart';
 
+// ignore: must_be_immutable
 class PageTextwidget extends StatelessWidget {
   static const nameRoute = "\pagetextwidget";
   var faker = new Faker();

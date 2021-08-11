@@ -13,6 +13,7 @@ class MyModel extends StatelessWidget {
   }
 }
 
+// ignore: must_be_immutable
 class MarketPlace extends StatelessWidget {
   Faker faker = Faker();
 

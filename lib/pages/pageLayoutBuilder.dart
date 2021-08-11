@@ -9,6 +9,7 @@ class PageLayoutBuilder extends StatelessWidget {
     final heightApp = MediaQuery.of(context).size.height;
     final paddingTop = MediaQuery.of(context).padding.top;
     final myAppBar = AppBar(title: Text("Layout Builder"));
+    // ignore: unused_local_variable
     final heightBody = heightApp - paddingTop - myAppBar.preferredSize.height;
 
     return Scaffold(
