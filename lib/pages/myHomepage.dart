@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_practices/pages/HttpPostFirebase.dart';
 import 'package:flutter_practices/pages/delete_home_provider.dart';
 import 'package:flutter_practices/pages/get_home_provider.dart';
 import 'package:flutter_practices/pages/get_home_stateful.dart';
@@ -234,6 +235,12 @@ class MyHomepage extends StatelessWidget {
       practiceName: "HTTP Request Delete Method Provider",
       navigation: DeleteProvider.nameRoute,
       desc: "Practice HTTP Request Delete Method Provider",
+    ),
+    PageItem(
+      icon: Icon(Icons.fire_extinguisher),
+      practiceName: "HTTP Request Post Method Firebase",
+      navigation: HttpPostFirebase.nameRoute,
+      desc: "Practice HTTP Request Post Method Firebase",
     ),
   ];
   @override
