@@ -25,7 +25,28 @@ class HttpPostFirebase extends StatelessWidget {
   }
 }
 
-class HomePage extends StatelessWidget {
+class HomePage extends StatefulWidget {
+  @override
+  _HomePageState createState() => _HomePageState();
+}
+
+class _HomePageState extends State<HomePage> {
+  bool isInit = true;
+  @override
+  void didChangeDependencies() {
+    if (isInit) {
+      Provider.of<Players>(context).initialData();
+    }
+    isInit = false;
+    super.didChangeDependencies();
+  }
+
+  @override
+  void dispose() {
+    isInit = true;
+    super.dispose();
+  }
+
   @override
   Widget build(BuildContext context) {
     final allPlayerProvider = Provider.of<Players>(context);
