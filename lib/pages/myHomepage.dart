@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_practices/pages/delete_home_provider.dart';
 import 'package:flutter_practices/pages/get_home_provider.dart';
 import 'package:flutter_practices/pages/get_home_stateful.dart';
 import 'package:flutter_practices/pages/post_home_provider.dart';
@@ -227,6 +228,12 @@ class MyHomepage extends StatelessWidget {
       practiceName: "HTTP Request Get Method Provider",
       navigation: GetProvider.nameRoute,
       desc: "Practice HTTP Request Get Method Provider",
+    ),
+    PageItem(
+      icon: Icon(Icons.http),
+      practiceName: "HTTP Request Delete Method Provider",
+      navigation: DeleteProvider.nameRoute,
+      desc: "Practice HTTP Request Delete Method Provider",
     ),
   ];
   @override
