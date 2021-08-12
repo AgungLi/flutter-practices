@@ -3,6 +3,7 @@ import 'package:flutter_practices/pages/HttpPostFirebase.dart';
 import 'package:flutter_practices/pages/delete_home_provider.dart';
 import 'package:flutter_practices/pages/get_home_provider.dart';
 import 'package:flutter_practices/pages/get_home_stateful.dart';
+import 'package:flutter_practices/pages/pageWidgeLifecycle.dart';
 import 'package:flutter_practices/pages/post_home_provider.dart';
 import 'package:flutter_practices/pages/post_home_stateful.dart';
 import 'package:flutter_practices/pages/myListview.dart';
@@ -242,6 +243,12 @@ class MyHomepage extends StatelessWidget {
       practiceName: "HTTP Request Post Method Firebase",
       navigation: HttpPostFirebase.nameRoute,
       desc: "Practice HTTP Request Post Method Firebase",
+    ),
+    PageItem(
+      icon: Icon(Icons.reduce_capacity_outlined),
+      practiceName: "Widget LifeCycle",
+      navigation: PageWidgetLifecycle.nameRoute,
+      desc: "Practice Widget LifeCycle",
     ),
   ];
   @override

@@ -35,6 +35,9 @@ import 'package:flutter_practices/pages/pageTextwidget.dart';
 import 'package:flutter_practices/pages/pageTheme.dart';
 import 'package:flutter_practices/pages/widgetLayouting.dart';
 
+import 'pages/pageWidgeLifecycle.dart';
+import 'pages/widgetlifecycle/other_page.dart';
+
 void main() {
   runApp(MyApp());
 }
@@ -90,6 +93,8 @@ class _MyAppState extends State<MyApp> {
         GetProvider.nameRoute: (context) => GetProvider(),
         DeleteProvider.nameRoute: (context) => DeleteProvider(),
         HttpPostFirebase.nameRoute: (context) => HttpPostFirebase(),
+        PageWidgetLifecycle.nameRoute: (context) => PageWidgetLifecycle(),
+        OtherPage.nameRoute: (context) => OtherPage(),
       },
     );
   }
