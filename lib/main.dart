@@ -3,6 +3,7 @@ import 'package:flutter_practices/pages/HttpPostFirebase.dart';
 import 'package:flutter_practices/pages/delete_home_provider.dart';
 import 'package:flutter_practices/pages/get_home_provider.dart';
 import 'package:flutter_practices/pages/get_home_stateful.dart';
+import 'package:flutter_practices/pages/pageApplicationLifecycle.dart';
 import 'package:flutter_practices/pages/post_home_provider.dart';
 import 'package:flutter_practices/pages/post_home_stateful.dart';
 import 'package:flutter_practices/pages/myHomepage.dart';
@@ -95,6 +96,8 @@ class _MyAppState extends State<MyApp> {
         HttpPostFirebase.nameRoute: (context) => HttpPostFirebase(),
         PageWidgetLifecycle.nameRoute: (context) => PageWidgetLifecycle(),
         OtherPage.nameRoute: (context) => OtherPage(),
+        PageApplicationLifeCycle.nameRoute: (context) =>
+            PageApplicationLifeCycle(),
       },
     );
   }

@@ -3,6 +3,7 @@ import 'package:flutter_practices/pages/HttpPostFirebase.dart';
 import 'package:flutter_practices/pages/delete_home_provider.dart';
 import 'package:flutter_practices/pages/get_home_provider.dart';
 import 'package:flutter_practices/pages/get_home_stateful.dart';
+import 'package:flutter_practices/pages/pageApplicationLifecycle.dart';
 import 'package:flutter_practices/pages/pageWidgeLifecycle.dart';
 import 'package:flutter_practices/pages/post_home_provider.dart';
 import 'package:flutter_practices/pages/post_home_stateful.dart';
@@ -249,6 +250,12 @@ class MyHomepage extends StatelessWidget {
       practiceName: "Widget LifeCycle",
       navigation: PageWidgetLifecycle.nameRoute,
       desc: "Practice Widget LifeCycle",
+    ),
+    PageItem(
+      icon: Icon(Icons.app_blocking),
+      practiceName: "Application LifeCycle",
+      navigation: PageApplicationLifeCycle.nameRoute,
+      desc: "Practice Application LifeCycle",
     ),
   ];
   @override

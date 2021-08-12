@@ -35,6 +35,7 @@ class _WidgetCounterState extends State<WidgetCounter> {
   }
 
   @override
+  // ignore: must_call_super
   void didUpdateWidget(covariant WidgetCounter oldWidget) {
     print("Old : ${oldWidget.counter}");
     print("didUpdateWidget");
