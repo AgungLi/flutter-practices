@@ -4,6 +4,7 @@ import 'package:flutter_practices/pages/delete_home_provider.dart';
 import 'package:flutter_practices/pages/get_home_provider.dart';
 import 'package:flutter_practices/pages/get_home_stateful.dart';
 import 'package:flutter_practices/pages/pageApplicationLifecycle.dart';
+import 'package:flutter_practices/pages/pageFutureBuildar.dart';
 import 'package:flutter_practices/pages/pageWidgeLifecycle.dart';
 import 'package:flutter_practices/pages/post_home_provider.dart';
 import 'package:flutter_practices/pages/post_home_stateful.dart';
@@ -256,6 +257,12 @@ class MyHomepage extends StatelessWidget {
       practiceName: "Application LifeCycle",
       navigation: PageApplicationLifeCycle.nameRoute,
       desc: "Practice Application LifeCycle",
+    ),
+    PageItem(
+      icon: Icon(Icons.build),
+      practiceName: "Future Builder",
+      navigation: PageFutureBuilder.nameRoute,
+      desc: "Practice Future Builder",
     ),
   ];
   @override
