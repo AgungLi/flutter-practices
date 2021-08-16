@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_practices/pages/HttpPostFirebase.dart';
+import 'package:flutter_practices/pages/checkbox/maincheckbox.dart';
 import 'package:flutter_practices/pages/delete_home_provider.dart';
 import 'package:flutter_practices/pages/get_home_provider.dart';
 import 'package:flutter_practices/pages/get_home_stateful.dart';
@@ -270,6 +271,12 @@ class MyHomepage extends StatelessWidget {
       practiceName: "Key",
       navigation: PageKey.nameRoute,
       desc: "Practice Key",
+    ),
+    PageItem(
+      icon: Icon(Icons.check_box),
+      practiceName: "Checkbox",
+      navigation: MainCheckbox.nameRoute,
+      desc: "Practice Checkbox",
     ),
   ];
   @override

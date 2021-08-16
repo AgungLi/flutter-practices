@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_practices/pages/HttpPostFirebase.dart';
+import 'package:flutter_practices/pages/checkbox/maincheckbox.dart';
 import 'package:flutter_practices/pages/delete_home_provider.dart';
 import 'package:flutter_practices/pages/get_home_provider.dart';
 import 'package:flutter_practices/pages/get_home_stateful.dart';
@@ -102,6 +103,7 @@ class _MyAppState extends State<MyApp> {
             PageApplicationLifeCycle(),
         PageFutureBuilder.nameRoute: (context) => PageFutureBuilder(),
         PageKey.nameRoute: (context) => PageKey(),
+        MainCheckbox.nameRoute: (context) => MainCheckbox(),
       },
     );
   }
