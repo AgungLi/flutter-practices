@@ -3,6 +3,7 @@ import 'package:flutter_practices/pages/HttpPostFirebase.dart';
 import 'package:flutter_practices/pages/delete_home_provider.dart';
 import 'package:flutter_practices/pages/get_home_provider.dart';
 import 'package:flutter_practices/pages/get_home_stateful.dart';
+import 'package:flutter_practices/pages/key/pages/home_pageKey.dart';
 import 'package:flutter_practices/pages/pageApplicationLifecycle.dart';
 import 'package:flutter_practices/pages/pageFutureBuildar.dart';
 import 'package:flutter_practices/pages/pageWidgeLifecycle.dart';
@@ -263,6 +264,12 @@ class MyHomepage extends StatelessWidget {
       practiceName: "Future Builder",
       navigation: PageFutureBuilder.nameRoute,
       desc: "Practice Future Builder",
+    ),
+    PageItem(
+      icon: Icon(Icons.lock),
+      practiceName: "Key",
+      navigation: PageKey.nameRoute,
+      desc: "Practice Key",
     ),
   ];
   @override
