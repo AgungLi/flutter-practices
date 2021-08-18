@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_practices/authentication/PageAuthentication.dart';
 import 'package:flutter_practices/pages/HttpPostFirebase.dart';
 import 'package:flutter_practices/pages/checkbox/maincheckbox.dart';
 import 'package:flutter_practices/pages/delete_home_provider.dart';
@@ -284,6 +285,12 @@ class MyHomepage extends StatelessWidget {
       practiceName: "Dropdown",
       navigation: PageDropdown.nameRoute,
       desc: "Practice Dropdown",
+    ),
+    PageItem(
+      icon: Icon(Icons.verified_user),
+      practiceName: "Authentication",
+      navigation: PageAuthentication.nameRoute,
+      desc: "Practice Authentication",
     ),
   ];
   @override
