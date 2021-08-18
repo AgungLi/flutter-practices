@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_practices/authentication/pages/auth_page.dart';
+import 'package:flutter_practices/authentication/providers/auth.dart';
 import 'package:provider/provider.dart';
 
 import 'providers/products.dart';
@@ -16,8 +17,15 @@ class PageAuthentication extends StatelessWidget {
   static const nameRoute = '\pageauthentication';
   @override
   Widget build(BuildContext context) {
-    return ChangeNotifierProvider(
-      create: (ctx) => Products(),
+    return MultiProvider(
+      providers: [
+        ChangeNotifierProvider(
+          create: (ctx) => Auth(),
+        ),
+        ChangeNotifierProvider(
+          create: (ctx) => Products(),
+        ),
+      ],
       builder: (context, child) => MaterialApp(
         debugShowCheckedModeBanner: false,
         home: LoginPage(),

@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_login/flutter_login.dart';
+import 'package:flutter_practices/authentication/providers/auth.dart';
+import 'package:provider/provider.dart';
 import 'home_page.dart';
 
 const users = const {
@@ -7,8 +9,30 @@ const users = const {
   'hunter@gmail.com': 'hunter',
 };
 
-class LoginPage extends StatelessWidget {
+class LoginPage extends StatefulWidget {
+  @override
+  _LoginPageState createState() => _LoginPageState();
+}
+
+class _LoginPageState extends State<LoginPage> {
   Duration get loginTime => Duration(milliseconds: 2250);
+
+  Future<String> _authUserSignUp(LoginData data) {
+    print('Name: ${data.name}, Password: ${data.password}');
+    return Future.delayed(loginTime).then((_) {
+      Provider.of<Auth>(context, listen: false)
+          .signUp(data.name, data.password);
+      return null;
+    });
+  }
+
+  Future<String> _authUserLogin(LoginData data) {
+    print('Name: ${data.name}, Password: ${data.password}');
+    return Future.delayed(loginTime).then((_) {
+      Provider.of<Auth>(context, listen: false).login(data.name, data.password);
+      return null;
+    });
+  }
 
   Future<String> _authUser(LoginData data) {
     print('Name: ${data.name}, Password: ${data.password}');
@@ -38,8 +62,8 @@ class LoginPage extends StatelessWidget {
     return FlutterLogin(
       title: 'ECORP',
       // logo: 'assets/images/ecorp-lightblue.png',
-      onLogin: _authUser,
-      onSignup: _authUser,
+      onLogin: _authUserLogin,
+      onSignup: _authUserSignUp,
       onSubmitAnimationCompleted: () {
         Navigator.of(context).pushReplacement(MaterialPageRoute(
           builder: (context) => HomePage(),
