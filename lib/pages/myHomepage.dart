@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_practices/authentication/PageAuthentication.dart';
 import 'package:flutter_practices/bloc/basebloc.dart';
+import 'package:flutter_practices/bloc/blocprovider.dart';
 import 'package:flutter_practices/pages/HttpPostFirebase.dart';
 import 'package:flutter_practices/pages/checkbox/maincheckbox.dart';
 import 'package:flutter_practices/pages/delete_home_provider.dart';
@@ -305,6 +306,12 @@ class MyHomepage extends StatelessWidget {
       practiceName: "Basic Bloc",
       navigation: BaseBloc.nameRoute,
       desc: "Practice Basic Bloc",
+    ),
+    PageItem(
+      icon: Icon(Icons.block_outlined),
+      practiceName: "Bloc Provider",
+      navigation: BlocProviderTest.nameRoute,
+      desc: "Practice Bloc Provider",
     ),
   ];
   @override
