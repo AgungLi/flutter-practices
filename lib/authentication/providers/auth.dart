@@ -4,35 +4,92 @@ import 'package:flutter/material.dart';
 import 'package:http/http.dart' as http;
 
 class Auth with ChangeNotifier {
-  void signUp(String email, String password) async {
-    Uri url = Uri.parse(
-        "https://identitytoolkit.googleapis.com/v1/accounts:signUp?key=AIzaSyC29ogDPvRUF3SacauYTwltLwP-RRRi8kM");
-    var response = await http.post(
-      url,
-      body: json.encode(
-        {
-          "email": email,
-          "password": password,
-          "returnSecureToken": true,
-        },
-      ),
-    );
-    print(json.decode(response.body));
+  String _idToken, userId;
+  DateTime _expiryDate;
+  String _tempidToken, tempuserId;
+  DateTime _tempexpiryDate;
+
+  void tempData() {
+    _idToken = _tempidToken;
+    userId = tempuserId;
+    _expiryDate = _tempexpiryDate;
+    notifyListeners();
   }
 
-  void login(String email, String password) async {
+  bool get isAuth {
+    return token != null;
+  }
+
+  String get token {
+    if (_idToken != null &&
+        _expiryDate.isAfter(DateTime.now()) &&
+        _expiryDate != null) {
+      return _idToken;
+    } else {
+      return null;
+    }
+  }
+
+  Future<void> signUp(String email, String password) async {
+    Uri url = Uri.parse(
+        "https://identitytoolkit.googleapis.com/v1/accounts:signUp?key=AIzaSyC29ogDPvRUF3SacauYTwltLwP-RRRi8kM");
+    try {
+      var response = await http.post(
+        url,
+        body: json.encode(
+          {
+            "email": email,
+            "password": password,
+            "returnSecureToken": true,
+          },
+        ),
+      );
+      var responseData = json.decode(response.body);
+      if (responseData['error'] != null) {
+        throw responseData['error']["message"];
+      }
+      _tempidToken = responseData["idToken"];
+      tempuserId = responseData["localId"];
+      _tempexpiryDate = DateTime.now().add(
+        Duration(
+          seconds: int.parse(responseData["expiresIn"]),
+        ),
+      );
+      notifyListeners();
+    } catch (e) {
+      throw e;
+    }
+  }
+
+  Future<void> login(String email, String password) async {
     Uri url = Uri.parse(
         "https://identitytoolkit.googleapis.com/v1/accounts:signInWithPassword?key=AIzaSyC29ogDPvRUF3SacauYTwltLwP-RRRi8kM");
-    var response = await http.post(
-      url,
-      body: json.encode(
-        {
-          "email": email,
-          "password": password,
-          "returnSecureToken": true,
-        },
-      ),
-    );
-    print(json.decode(response.body));
+
+    try {
+      var response = await http.post(
+        url,
+        body: json.encode(
+          {
+            "email": email,
+            "password": password,
+            "returnSecureToken": true,
+          },
+        ),
+      );
+      var responseData = json.decode(response.body);
+      if (responseData['error'] != null) {
+        throw responseData['error']["message"];
+      }
+      _tempidToken = responseData["idToken"];
+      tempuserId = responseData["localId"];
+      _tempexpiryDate = DateTime.now().add(
+        Duration(
+          seconds: int.parse(responseData["expiresIn"]),
+        ),
+      );
+      notifyListeners();
+    } catch (e) {
+      throw e;
+    }
   }
 }

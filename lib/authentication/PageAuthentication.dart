@@ -22,18 +22,21 @@ class PageAuthentication extends StatelessWidget {
         ChangeNotifierProvider(
           create: (ctx) => Auth(),
         ),
-        ChangeNotifierProvider(
-          create: (ctx) => Products(),
+        ChangeNotifierProxyProvider<Auth, Products>(
+          create: (context) => Products(),
+          update: (context, auth, products) => products..updateData(auth.token),
         ),
       ],
-      builder: (context, child) => MaterialApp(
-        debugShowCheckedModeBanner: false,
-        home: LoginPage(),
-        routes: {
-          AddProductPage.route: (ctx) => AddProductPage(),
-          EditProductPage.route: (ctx) => EditProductPage(),
-          HomePage.route: (ctx) => HomePage(),
-        },
+      builder: (context, child) => Consumer<Auth>(
+        builder: (context, auth, child) => MaterialApp(
+          debugShowCheckedModeBanner: false,
+          home: auth.isAuth ? HomePage() : LoginPage(),
+          routes: {
+            AddProductPage.route: (ctx) => AddProductPage(),
+            EditProductPage.route: (ctx) => EditProductPage(),
+            HomePage.route: (ctx) => HomePage(),
+          },
+        ),
       ),
     );
   }

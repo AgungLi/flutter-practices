@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_login/flutter_login.dart';
 import 'package:flutter_practices/authentication/providers/auth.dart';
 import 'package:provider/provider.dart';
-import 'home_page.dart';
+// import 'home_page.dart';
 
 const users = const {
   'dribbble@gmail.com': '12345',
@@ -19,33 +19,43 @@ class _LoginPageState extends State<LoginPage> {
 
   Future<String> _authUserSignUp(LoginData data) {
     print('Name: ${data.name}, Password: ${data.password}');
-    return Future.delayed(loginTime).then((_) {
-      Provider.of<Auth>(context, listen: false)
-          .signUp(data.name, data.password);
+    return Future.delayed(loginTime).then((_) async {
+      try {
+        await Provider.of<Auth>(context, listen: false)
+            .signUp(data.name, data.password);
+      } catch (e) {
+        return e.toString();
+      }
+
       return null;
     });
   }
 
   Future<String> _authUserLogin(LoginData data) {
-    print('Name: ${data.name}, Password: ${data.password}');
-    return Future.delayed(loginTime).then((_) {
-      Provider.of<Auth>(context, listen: false).login(data.name, data.password);
+    return Future.delayed(loginTime).then((_) async {
+      try {
+        await Provider.of<Auth>(context, listen: false)
+            .login(data.name, data.password);
+      } catch (e) {
+        return e.toString();
+      }
+
       return null;
     });
   }
 
-  Future<String> _authUser(LoginData data) {
-    print('Name: ${data.name}, Password: ${data.password}');
-    return Future.delayed(loginTime).then((_) {
-      if (!users.containsKey(data.name)) {
-        return 'User not exists';
-      }
-      if (users[data.name] != data.password) {
-        return 'Password does not match';
-      }
-      return null;
-    });
-  }
+  // Future<String> _authUser(LoginData data) {
+  //   print('Name: ${data.name}, Password: ${data.password}');
+  //   return Future.delayed(loginTime).then((_) {
+  //     if (!users.containsKey(data.name)) {
+  //       return 'User not exists';
+  //     }
+  //     if (users[data.name] != data.password) {
+  //       return 'Password does not match';
+  //     }
+  //     return null;
+  //   });
+  // }
 
   Future<String> _recoverPassword(String name) {
     print('Name: $name');
@@ -65,9 +75,7 @@ class _LoginPageState extends State<LoginPage> {
       onLogin: _authUserLogin,
       onSignup: _authUserSignUp,
       onSubmitAnimationCompleted: () {
-        Navigator.of(context).pushReplacement(MaterialPageRoute(
-          builder: (context) => HomePage(),
-        ));
+        Provider.of<Auth>(context, listen: false).tempData();
       },
       onRecoverPassword: _recoverPassword,
     );
