@@ -31,7 +31,21 @@ class PageAuthentication extends StatelessWidget {
       builder: (context, child) => Consumer<Auth>(
         builder: (context, auth, child) => MaterialApp(
           debugShowCheckedModeBanner: false,
-          home: auth.isAuth ? HomePage() : LoginPage(),
+          home: auth.isAuth
+              ? HomePage()
+              : FutureBuilder(
+                  future: auth.autologin(),
+                  builder: (context, snapshot) {
+                    if (snapshot.connectionState == ConnectionState.waiting) {
+                      return Scaffold(
+                        body: Center(
+                          child: CircularProgressIndicator(),
+                        ),
+                      );
+                    }
+                    return LoginPage();
+                  },
+                ),
           routes: {
             AddProductPage.route: (ctx) => AddProductPage(),
             EditProductPage.route: (ctx) => EditProductPage(),
