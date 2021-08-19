@@ -40,6 +40,7 @@ import 'package:flutter_practices/pages/pageTextfield.dart';
 import 'package:flutter_practices/pages/pageTextwidget.dart';
 import 'package:flutter_practices/pages/pageTheme.dart';
 import 'package:flutter_practices/pages/widgetLayouting.dart';
+import 'package:flutter_practices/shredprefences/pagesp.dart';
 
 // ignore: must_be_immutable
 class MyHomepage extends StatelessWidget {
@@ -291,6 +292,12 @@ class MyHomepage extends StatelessWidget {
       practiceName: "Authentication",
       navigation: PageAuthentication.nameRoute,
       desc: "Practice Authentication",
+    ),
+    PageItem(
+      icon: Icon(Icons.share_rounded),
+      practiceName: "Shared Preferences",
+      navigation: PageSharedPreferences.nameRoute,
+      desc: "Practice Shared Preferences",
     ),
   ];
   @override

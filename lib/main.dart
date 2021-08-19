@@ -40,6 +40,7 @@ import 'package:flutter_practices/pages/pageTextfield.dart';
 import 'package:flutter_practices/pages/pageTextwidget.dart';
 import 'package:flutter_practices/pages/pageTheme.dart';
 import 'package:flutter_practices/pages/widgetLayouting.dart';
+import 'package:flutter_practices/shredprefences/pagesp.dart';
 
 import 'pages/pageWidgeLifecycle.dart';
 import 'pages/widgetlifecycle/other_page.dart';
@@ -108,6 +109,7 @@ class _MyAppState extends State<MyApp> {
         MainCheckbox.nameRoute: (context) => MainCheckbox(),
         PageDropdown.nameRoute: (context) => PageDropdown(),
         PageAuthentication.nameRoute: (context) => PageAuthentication(),
+        PageSharedPreferences.nameRoute: (context) => PageSharedPreferences(),
       },
     );
   }
