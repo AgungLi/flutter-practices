@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_practices/authentication/PageAuthentication.dart';
 import 'package:flutter_practices/bloc/basebloc.dart';
+import 'package:flutter_practices/bloc/bloc_cubit.dart';
 import 'package:flutter_practices/bloc/blocprovider.dart';
 import 'package:flutter_practices/pages/HttpPostFirebase.dart';
 import 'package:flutter_practices/pages/checkbox/maincheckbox.dart';
@@ -114,6 +115,7 @@ class _MyAppState extends State<MyApp> {
         PageSharedPreferences.nameRoute: (context) => PageSharedPreferences(),
         BaseBloc.nameRoute: (context) => BaseBloc(),
         BlocProviderTest.nameRoute: (context) => BlocProviderTest(),
+        TestBlocCubit.nameRoute: (context) => TestBlocCubit(),
       },
     );
   }
