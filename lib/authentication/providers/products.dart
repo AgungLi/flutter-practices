@@ -7,9 +7,10 @@ import 'package:intl/intl.dart';
 import '../models/product.dart';
 
 class Products with ChangeNotifier {
-  String token;
-  void updateData(tokenData) {
+  String token, userId;
+  void updateData(tokenData, uid) {
     token = tokenData;
+    userId = uid;
     notifyListeners();
   }
 
@@ -29,6 +30,7 @@ class Products with ChangeNotifier {
           "price": price,
           "createdAt": dateNow.toString(),
           "updatedAt": dateNow.toString(),
+          "userId": userId,
         }),
       );
 
@@ -100,7 +102,8 @@ class Products with ChangeNotifier {
   }
 
   Future<void> inisialData() async {
-    Uri url = Uri.parse("$urlMaster/products.json?=auth=$token");
+    Uri url = Uri.parse(
+        '$urlMaster/products.json?=auth=$token&orderBy="userId"&equalTo="$userId"');
 
     try {
       var response = await http.get(url);
@@ -112,20 +115,18 @@ class Products with ChangeNotifier {
       } else {
         var data = json.decode(response.body) as Map<String, dynamic>;
         if (data != null) {
-          data.forEach(
-            (key, value) {
-              Product prod = Product(
-                id: key,
-                title: value["title"],
-                price: value["price"],
-                createdAt:
-                    DateFormat("yyyy-mm-dd hh:mm:ss").parse(value["createdAt"]),
-                updatedAt:
-                    DateFormat("yyyy-mm-dd hh:mm:ss").parse(value["updatedAt"]),
-              );
-              _allProduct.add(prod);
-            },
-          );
+          data.forEach((key, value) {
+            Product prod = Product(
+              id: key,
+              title: value["title"],
+              price: value["price"],
+              createdAt:
+                  DateFormat("yyyy-mm-dd hh:mm:ss").parse(value["createdAt"]),
+              updatedAt:
+                  DateFormat("yyyy-mm-dd hh:mm:ss").parse(value["updatedAt"]),
+            );
+            _allProduct.add(prod);
+          });
         }
       }
     } catch (e) {
