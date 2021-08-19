@@ -3,6 +3,7 @@ import 'package:flutter_practices/authentication/PageAuthentication.dart';
 import 'package:flutter_practices/bloc/basebloc.dart';
 import 'package:flutter_practices/bloc/bloc_cubit.dart';
 import 'package:flutter_practices/bloc/blocprovider.dart';
+import 'package:flutter_practices/bloc/multiblocprovider.dart';
 import 'package:flutter_practices/pages/HttpPostFirebase.dart';
 import 'package:flutter_practices/pages/checkbox/maincheckbox.dart';
 import 'package:flutter_practices/pages/delete_home_provider.dart';
@@ -319,6 +320,12 @@ class MyHomepage extends StatelessWidget {
       practiceName: "Bloc Vs Cubit",
       navigation: TestBlocCubit.nameRoute,
       desc: "Practice Bloc Vs Cubit",
+    ),
+    PageItem(
+      icon: Icon(Icons.app_blocking_sharp),
+      practiceName: "Multi Bloc Provider",
+      navigation: TestMultiBlocProvider.nameRoute,
+      desc: "Practice Multi Bloc Provider",
     ),
   ];
   @override
