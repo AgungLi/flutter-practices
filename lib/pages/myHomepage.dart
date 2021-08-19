@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_practices/authentication/PageAuthentication.dart';
+import 'package:flutter_practices/bloc/basebloc.dart';
 import 'package:flutter_practices/pages/HttpPostFirebase.dart';
 import 'package:flutter_practices/pages/checkbox/maincheckbox.dart';
 import 'package:flutter_practices/pages/delete_home_provider.dart';
@@ -298,6 +299,12 @@ class MyHomepage extends StatelessWidget {
       practiceName: "Shared Preferences",
       navigation: PageSharedPreferences.nameRoute,
       desc: "Practice Shared Preferences",
+    ),
+    PageItem(
+      icon: Icon(Icons.block),
+      practiceName: "Basic Bloc",
+      navigation: BaseBloc.nameRoute,
+      desc: "Practice Basic Bloc",
     ),
   ];
   @override
