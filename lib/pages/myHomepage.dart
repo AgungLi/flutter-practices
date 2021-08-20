@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_practices/authentication/PageAuthentication.dart';
 import 'package:flutter_practices/bloc/basebloc.dart';
+import 'package:flutter_practices/bloc/bloc_consumer.dart';
 import 'package:flutter_practices/bloc/bloc_cubit.dart';
 import 'package:flutter_practices/bloc/bloc_listener.dart';
 import 'package:flutter_practices/bloc/blocprovider.dart';
@@ -333,6 +334,12 @@ class MyHomepage extends StatelessWidget {
       practiceName: "Bloc Listener",
       navigation: TestBlocListener.nameRoute,
       desc: "Practice Bloc Listener",
+    ),
+    PageItem(
+      icon: Icon(Icons.construction),
+      practiceName: "Bloc Consumer",
+      navigation: TestBlocConsumer.nameRoute,
+      desc: "Practice Bloc Consumer",
     ),
   ];
   @override

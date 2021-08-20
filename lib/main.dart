@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_practices/authentication/PageAuthentication.dart';
 import 'package:flutter_practices/bloc/basebloc.dart';
+import 'package:flutter_practices/bloc/bloc_consumer.dart';
 import 'package:flutter_practices/bloc/bloc_cubit.dart';
 import 'package:flutter_practices/bloc/bloc_listener.dart';
 import 'package:flutter_practices/bloc/blocprovider.dart';
@@ -120,6 +121,7 @@ class _MyAppState extends State<MyApp> {
         TestBlocCubit.nameRoute: (context) => TestBlocCubit(),
         TestMultiBlocProvider.nameRoute: (context) => TestMultiBlocProvider(),
         TestBlocListener.nameRoute: (context) => TestBlocListener(),
+        TestBlocConsumer.nameRoute: (context) => TestBlocConsumer(),
       },
     );
   }
