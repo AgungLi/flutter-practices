@@ -6,6 +6,7 @@ import 'package:flutter_practices/bloc/bloc_cubit.dart';
 import 'package:flutter_practices/bloc/bloc_listener.dart';
 import 'package:flutter_practices/bloc/blocprovider.dart';
 import 'package:flutter_practices/bloc/multiblocprovider.dart';
+import 'package:flutter_practices/getx/main_getx.dart';
 import 'package:flutter_practices/pages/HttpPostFirebase.dart';
 import 'package:flutter_practices/pages/checkbox/maincheckbox.dart';
 import 'package:flutter_practices/pages/delete_home_provider.dart';
@@ -47,6 +48,7 @@ import 'package:flutter_practices/pages/pageTextwidget.dart';
 import 'package:flutter_practices/pages/pageTheme.dart';
 import 'package:flutter_practices/pages/widgetLayouting.dart';
 import 'package:flutter_practices/shredprefences/pagesp.dart';
+import 'package:get/get.dart';
 
 import 'pages/pageWidgeLifecycle.dart';
 import 'pages/widgetlifecycle/other_page.dart';
@@ -63,7 +65,7 @@ class MyApp extends StatefulWidget {
 class _MyAppState extends State<MyApp> {
   @override
   Widget build(BuildContext context) {
-    return MaterialApp(
+    return GetMaterialApp(
       theme: ThemeData(
         brightness: Brightness.dark,
       ),
@@ -122,6 +124,7 @@ class _MyAppState extends State<MyApp> {
         TestMultiBlocProvider.nameRoute: (context) => TestMultiBlocProvider(),
         TestBlocListener.nameRoute: (context) => TestBlocListener(),
         TestBlocConsumer.nameRoute: (context) => TestBlocConsumer(),
+        MainGetX.nameRoute: (context) => MainGetX(),
       },
     );
   }

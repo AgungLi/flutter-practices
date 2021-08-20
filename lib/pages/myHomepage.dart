@@ -6,6 +6,7 @@ import 'package:flutter_practices/bloc/bloc_cubit.dart';
 import 'package:flutter_practices/bloc/bloc_listener.dart';
 import 'package:flutter_practices/bloc/blocprovider.dart';
 import 'package:flutter_practices/bloc/multiblocprovider.dart';
+import 'package:flutter_practices/getx/main_getx.dart';
 import 'package:flutter_practices/pages/HttpPostFirebase.dart';
 import 'package:flutter_practices/pages/checkbox/maincheckbox.dart';
 import 'package:flutter_practices/pages/delete_home_provider.dart';
@@ -340,6 +341,12 @@ class MyHomepage extends StatelessWidget {
       practiceName: "Bloc Consumer",
       navigation: TestBlocConsumer.nameRoute,
       desc: "Practice Bloc Consumer",
+    ),
+    PageItem(
+      icon: Icon(Icons.get_app),
+      practiceName: "Counter GetX",
+      navigation: MainGetX.nameRoute,
+      desc: "Practice Counter GetX",
     ),
   ];
   @override
