@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_practices/authentication/PageAuthentication.dart';
 import 'package:flutter_practices/bloc/basebloc.dart';
 import 'package:flutter_practices/bloc/bloc_cubit.dart';
+import 'package:flutter_practices/bloc/bloc_listener.dart';
 import 'package:flutter_practices/bloc/blocprovider.dart';
 import 'package:flutter_practices/bloc/multiblocprovider.dart';
 import 'package:flutter_practices/pages/HttpPostFirebase.dart';
@@ -326,6 +327,12 @@ class MyHomepage extends StatelessWidget {
       practiceName: "Multi Bloc Provider",
       navigation: TestMultiBlocProvider.nameRoute,
       desc: "Practice Multi Bloc Provider",
+    ),
+    PageItem(
+      icon: Icon(Icons.block_flipped),
+      practiceName: "Bloc Listener",
+      navigation: TestBlocListener.nameRoute,
+      desc: "Practice Bloc Listener",
     ),
   ];
   @override
