@@ -10,6 +10,7 @@ import 'package:flutter_practices/getx/main_getx.dart';
 import 'package:flutter_practices/getx/state_management/reactive/getx/maingetx.dart';
 import 'package:flutter_practices/getx/state_management/reactive/obx/mainobx.dart';
 import 'package:flutter_practices/getx/state_management/simple/mainsimplegetx.dart';
+import 'package:flutter_practices/getx/uniqueid/mainuniqueid.dart';
 import 'package:flutter_practices/pages/HttpPostFirebase.dart';
 import 'package:flutter_practices/pages/checkbox/maincheckbox.dart';
 import 'package:flutter_practices/pages/delete_home_provider.dart';
@@ -368,6 +369,12 @@ class MyHomepage extends StatelessWidget {
       practiceName: "Main Simple GetX",
       navigation: MainSimpleGetx.nameRoute,
       desc: "Practice Main Simple GetX",
+    ),
+    PageItem(
+      icon: Icon(Icons.unarchive),
+      practiceName: "Main Unique Id GetX",
+      navigation: MainUniqueId.nameRoute,
+      desc: "Practice Main Unique Id GetX",
     ),
   ];
   @override
