@@ -7,6 +7,9 @@ import 'package:flutter_practices/bloc/bloc_listener.dart';
 import 'package:flutter_practices/bloc/blocprovider.dart';
 import 'package:flutter_practices/bloc/multiblocprovider.dart';
 import 'package:flutter_practices/getx/main_getx.dart';
+import 'package:flutter_practices/getx/state_management/reactive/getx/maingetx.dart';
+import 'package:flutter_practices/getx/state_management/reactive/obx/mainobx.dart';
+import 'package:flutter_practices/getx/state_management/simple/mainsimplegetx.dart';
 import 'package:flutter_practices/pages/HttpPostFirebase.dart';
 import 'package:flutter_practices/pages/checkbox/maincheckbox.dart';
 import 'package:flutter_practices/pages/delete_home_provider.dart';
@@ -347,6 +350,24 @@ class MyHomepage extends StatelessWidget {
       practiceName: "Counter GetX",
       navigation: MainGetX.nameRoute,
       desc: "Practice Counter GetX",
+    ),
+    PageItem(
+      icon: Icon(Icons.gesture_rounded),
+      practiceName: "Main reactive Getx",
+      navigation: MainReactiveGetX.nameRoute,
+      desc: "Practice Main Reactive GetX",
+    ),
+    PageItem(
+      icon: Icon(Icons.offline_bolt_outlined),
+      practiceName: "Main Reactive Obx",
+      navigation: MainObx.nameRoute,
+      desc: "Practice Main Reactive Obx",
+    ),
+    PageItem(
+      icon: Icon(Icons.six_mp_outlined),
+      practiceName: "Main Simple GetX",
+      navigation: MainSimpleGetx.nameRoute,
+      desc: "Practice Main Simple GetX",
     ),
   ];
   @override

@@ -7,6 +7,9 @@ import 'package:flutter_practices/bloc/bloc_listener.dart';
 import 'package:flutter_practices/bloc/blocprovider.dart';
 import 'package:flutter_practices/bloc/multiblocprovider.dart';
 import 'package:flutter_practices/getx/main_getx.dart';
+import 'package:flutter_practices/getx/state_management/reactive/getx/maingetx.dart';
+import 'package:flutter_practices/getx/state_management/reactive/obx/mainobx.dart';
+import 'package:flutter_practices/getx/state_management/simple/mainsimplegetx.dart';
 import 'package:flutter_practices/pages/HttpPostFirebase.dart';
 import 'package:flutter_practices/pages/checkbox/maincheckbox.dart';
 import 'package:flutter_practices/pages/delete_home_provider.dart';
@@ -124,7 +127,9 @@ class _MyAppState extends State<MyApp> {
         TestMultiBlocProvider.nameRoute: (context) => TestMultiBlocProvider(),
         TestBlocListener.nameRoute: (context) => TestBlocListener(),
         TestBlocConsumer.nameRoute: (context) => TestBlocConsumer(),
-        MainGetX.nameRoute: (context) => MainGetX(),
+        MainReactiveGetX.nameRoute: (context) => MainReactiveGetX(),
+        MainObx.nameRoute: (context) => MainObx(),
+        MainSimpleGetx.nameRoute: (context) => MainSimpleGetx(),
       },
     );
   }
