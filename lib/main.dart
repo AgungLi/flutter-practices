@@ -6,6 +6,7 @@ import 'package:flutter_practices/bloc/bloc_cubit.dart';
 import 'package:flutter_practices/bloc/bloc_listener.dart';
 import 'package:flutter_practices/bloc/blocprovider.dart';
 import 'package:flutter_practices/bloc/multiblocprovider.dart';
+import 'package:flutter_practices/getx/getxlifecycle/maingetxlifecycle.dart';
 // import 'package:flutter_practices/getx/main_getx.dart';
 import 'package:flutter_practices/getx/state_management/reactive/getx/maingetx.dart';
 import 'package:flutter_practices/getx/state_management/reactive/obx/mainobx.dart';
@@ -132,6 +133,7 @@ class _MyAppState extends State<MyApp> {
         MainObx.nameRoute: (context) => MainObx(),
         MainSimpleGetx.nameRoute: (context) => MainSimpleGetx(),
         MainUniqueId.nameRoute: (context) => MainUniqueId(),
+        MainGetLifeCycle.nameRoute: (context) => MainGetLifeCycle(),
       },
     );
   }

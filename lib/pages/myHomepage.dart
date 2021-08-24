@@ -6,6 +6,7 @@ import 'package:flutter_practices/bloc/bloc_cubit.dart';
 import 'package:flutter_practices/bloc/bloc_listener.dart';
 import 'package:flutter_practices/bloc/blocprovider.dart';
 import 'package:flutter_practices/bloc/multiblocprovider.dart';
+import 'package:flutter_practices/getx/getxlifecycle/maingetxlifecycle.dart';
 import 'package:flutter_practices/getx/main_getx.dart';
 import 'package:flutter_practices/getx/state_management/reactive/getx/maingetx.dart';
 import 'package:flutter_practices/getx/state_management/reactive/obx/mainobx.dart';
@@ -375,6 +376,12 @@ class MyHomepage extends StatelessWidget {
       practiceName: "Main Unique Id GetX",
       navigation: MainUniqueId.nameRoute,
       desc: "Practice Main Unique Id GetX",
+    ),
+    PageItem(
+      icon: Icon(Icons.unarchive),
+      practiceName: "Main GetX Life Cycle",
+      navigation: MainGetLifeCycle.nameRoute,
+      desc: "Practice GetX Life Cycle",
     ),
   ];
   @override
