@@ -7,6 +7,7 @@ import 'package:flutter_practices/bloc/bloc_listener.dart';
 import 'package:flutter_practices/bloc/blocprovider.dart';
 import 'package:flutter_practices/bloc/multiblocprovider.dart';
 import 'package:flutter_practices/getx/getxlifecycle/maingetxlifecycle.dart';
+import 'package:flutter_practices/getx/getxnavigation/maingetxnavigator.dart';
 import 'package:flutter_practices/getx/getxworkers/mainworkers.dart';
 import 'package:flutter_practices/getx/main_getx.dart';
 import 'package:flutter_practices/getx/state_management/reactive/getx/maingetx.dart';
@@ -389,6 +390,12 @@ class MyHomepage extends StatelessWidget {
       practiceName: "GetX Workers",
       navigation: MainWorkers.nameRoute,
       desc: "Practice GetX Workers",
+    ),
+    PageItem(
+      icon: Icon(Icons.navigate_before),
+      practiceName: "GetX Navigator",
+      navigation: MainGetxNavigation.nameRoute,
+      desc: "Practice GetX Navigator",
     ),
   ];
   @override

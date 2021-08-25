@@ -7,6 +7,7 @@ import 'package:flutter_practices/bloc/bloc_listener.dart';
 import 'package:flutter_practices/bloc/blocprovider.dart';
 import 'package:flutter_practices/bloc/multiblocprovider.dart';
 import 'package:flutter_practices/getx/getxlifecycle/maingetxlifecycle.dart';
+import 'package:flutter_practices/getx/getxnavigation/maingetxnavigator.dart';
 import 'package:flutter_practices/getx/getxworkers/mainworkers.dart';
 // import 'package:flutter_practices/getx/main_getx.dart';
 import 'package:flutter_practices/getx/state_management/reactive/getx/maingetx.dart';
@@ -136,6 +137,7 @@ class _MyAppState extends State<MyApp> {
         MainUniqueId.nameRoute: (context) => MainUniqueId(),
         MainGetLifeCycle.nameRoute: (context) => MainGetLifeCycle(),
         MainWorkers.nameRoute: (context) => MainWorkers(),
+        MainGetxNavigation.nameRoute: (context) => MainGetxNavigation(),
       },
     );
   }
